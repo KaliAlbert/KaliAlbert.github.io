@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kalialbert.github.io/"/>
-  <updated>2020-05-02T12:53:19.157Z</updated>
+  <updated>2020-05-02T12:59:56.530Z</updated>
   <id>https://kalialbert.github.io/</id>
   
   <author>
@@ -17,11 +17,26 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>more</title>
+    <link href="https://kalialbert.github.io/article/2337469052/"/>
+    <id>https://kalialbert.github.io/article/2337469052/</id>
+    <published>2020-05-02T12:59:56.000Z</published>
+    <updated>2020-05-02T12:59:56.530Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Mytest</title>
     <link href="https://kalialbert.github.io/article/268278719/"/>
     <id>https://kalialbert.github.io/article/268278719/</id>
     <published>2020-05-02T12:52:42.000Z</published>
-    <updated>2020-05-02T12:53:19.157Z</updated>
+    <updated>2020-05-02T12:53:30.687Z</updated>
     
     <content type="html"><![CDATA[<p>if  you see ,that mean the working</p>]]></content>
     

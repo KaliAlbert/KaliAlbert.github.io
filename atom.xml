@@ -17,25 +17,6 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>6</title>
-    <link href="https://kalialbert.github.io/article/498629140/"/>
-    <id>https://kalialbert.github.io/article/498629140/</id>
-    <published>2020-05-03T10:32:22.000Z</published>
-    <updated>2020-05-03T10:33:01.835Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="设置博主文字描述和中文语言"><a href="#设置博主文字描述和中文语言" class="headerlink" title="设置博主文字描述和中文语言"></a>设置博主文字描述和中文语言</h1><h2 id="站点配置文件修改site"><a href="#站点配置文件修改site" class="headerlink" title="站点配置文件修改site"></a>站点配置文件修改site</h2><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">title:</span> Kali</span><br><span class="line"><span class="symbol">subtitle:</span> IT博客</span><br><span class="line"><span class="symbol">description:</span> 没有目的，就做不成任何事情</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> KaliAlbert</span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN</span><br><span class="line"><span class="symbol">timezone:</span> Asia/Shanghai</span><br></pre></td></tr></table></figure><a id="more"></a>]]></content>
-    
-    <summary type="html">
-    
-      &lt;h1 id=&quot;设置博主文字描述和中文语言&quot;&gt;&lt;a href=&quot;#设置博主文字描述和中文语言&quot; class=&quot;headerlink&quot; title=&quot;设置博主文字描述和中文语言&quot;&gt;&lt;/a&gt;设置博主文字描述和中文语言&lt;/h1&gt;&lt;h2 id=&quot;站点配置文件修改site&quot;&gt;&lt;a href=&quot;#站点配置文件修改site&quot; class=&quot;headerlink&quot; title=&quot;站点配置文件修改site&quot;&gt;&lt;/a&gt;站点配置文件修改site&lt;/h2&gt;&lt;figure class=&quot;highlight avrasm&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;title:&lt;/span&gt; Kali&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;subtitle:&lt;/span&gt; IT博客&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;description:&lt;/span&gt; 没有目的，就做不成任何事情&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;keywords:&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;author:&lt;/span&gt; KaliAlbert&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;language:&lt;/span&gt; &lt;span class=&quot;built_in&quot;&gt;zh&lt;/span&gt;-CN&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;symbol&quot;&gt;timezone:&lt;/span&gt; Asia/Shanghai&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>5</title>
     <link href="https://kalialbert.github.io/article/2226203566/"/>
     <id>https://kalialbert.github.io/article/2226203566/</id>

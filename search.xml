@@ -1,31 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>1</title>
-    <url>/article/2212294583/</url>
-    <content><![CDATA[<h1 id="设置博主文字描述和中文语言"><a href="#设置博主文字描述和中文语言" class="headerlink" title="设置博主文字描述和中文语言"></a>设置博主文字描述和中文语言</h1><h2 id="站点配置文件修改site"><a href="#站点配置文件修改site" class="headerlink" title="站点配置文件修改site"></a>站点配置文件修改site</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">title:</span> Kali</span><br><span class="line"><span class="symbol">subtitle:</span> IT博客</span><br><span class="line"><span class="symbol">description:</span> 没有目的，就做不成任何事情</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> KaliAlbert</span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN</span><br><span class="line"><span class="symbol">timezone:</span> Asia/Shanghai</span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
-  </entry>
-  <entry>
-    <title>2</title>
-    <url>/article/450215437/</url>
-    <content><![CDATA[<h1 id="设置博主文字描述和中文语言"><a href="#设置博主文字描述和中文语言" class="headerlink" title="设置博主文字描述和中文语言"></a>设置博主文字描述和中文语言</h1><h2 id="站点配置文件修改site"><a href="#站点配置文件修改site" class="headerlink" title="站点配置文件修改site"></a>站点配置文件修改site</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">title:</span> Kali</span><br><span class="line"><span class="symbol">subtitle:</span> IT博客</span><br><span class="line"><span class="symbol">description:</span> 没有目的，就做不成任何事情</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> KaliAlbert</span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN</span><br><span class="line"><span class="symbol">timezone:</span> Asia/Shanghai</span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
-  </entry>
-  <entry>
-    <title>3</title>
-    <url>/article/1842515611/</url>
-    <content><![CDATA[<h1 id="设置博主文字描述和中文语言"><a href="#设置博主文字描述和中文语言" class="headerlink" title="设置博主文字描述和中文语言"></a>设置博主文字描述和中文语言</h1><h2 id="站点配置文件修改site"><a href="#站点配置文件修改site" class="headerlink" title="站点配置文件修改site"></a>站点配置文件修改site</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">title:</span> Kali</span><br><span class="line"><span class="symbol">subtitle:</span> IT博客</span><br><span class="line"><span class="symbol">description:</span> 没有目的，就做不成任何事情</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> KaliAlbert</span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN</span><br><span class="line"><span class="symbol">timezone:</span> Asia/Shanghai</span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
-  </entry>
-  <entry>
-    <title>4</title>
-    <url>/article/4088798008/</url>
-    <content><![CDATA[<h1 id="设置博主文字描述和中文语言"><a href="#设置博主文字描述和中文语言" class="headerlink" title="设置博主文字描述和中文语言"></a>设置博主文字描述和中文语言</h1><h2 id="站点配置文件修改site"><a href="#站点配置文件修改site" class="headerlink" title="站点配置文件修改site"></a>站点配置文件修改site</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">title:</span> Kali</span><br><span class="line"><span class="symbol">subtitle:</span> IT博客</span><br><span class="line"><span class="symbol">description:</span> 没有目的，就做不成任何事情</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> KaliAlbert</span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN</span><br><span class="line"><span class="symbol">timezone:</span> Asia/Shanghai</span><br></pre></td></tr></table></figure>
-<a id="more"></a>]]></content>
-  </entry>
-  <entry>
-    <title>usetest</title>
+    <title>hexo主题next7.8版本配置美化</title>
     <url>/article/107153072/</url>
     <content><![CDATA[<h1 id="设置博主文字描述和中文语言"><a href="#设置博主文字描述和中文语言" class="headerlink" title="设置博主文字描述和中文语言"></a>设置博主文字描述和中文语言</h1><h2 id="站点配置文件修改site"><a href="#站点配置文件修改site" class="headerlink" title="站点配置文件修改site"></a>站点配置文件修改site</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">title:</span> Kali</span><br><span class="line"><span class="symbol">subtitle:</span> IT博客</span><br><span class="line"><span class="symbol">description:</span> 没有目的，就做不成任何事情</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> KaliAlbert</span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN</span><br><span class="line"><span class="symbol">timezone:</span> Asia/Shanghai</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
@@ -154,21 +130,10 @@
 
 
 ]]></content>
-  </entry>
-  <entry>
-    <title>5</title>
-    <url>/article/2226203566/</url>
-    <content><![CDATA[<h1 id="设置博主文字描述和中文语言"><a href="#设置博主文字描述和中文语言" class="headerlink" title="设置博主文字描述和中文语言"></a>设置博主文字描述和中文语言</h1><h2 id="站点配置文件修改site"><a href="#站点配置文件修改site" class="headerlink" title="站点配置文件修改site"></a>站点配置文件修改site</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">title:</span> Kali</span><br><span class="line"><span class="symbol">subtitle:</span> IT博客</span><br><span class="line"><span class="symbol">description:</span> 没有目的，就做不成任何事情</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> KaliAlbert</span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN</span><br><span class="line"><span class="symbol">timezone:</span> Asia/Shanghai</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-]]></content>
-      <categories>
-        <category>me</category>
-      </categories>
       <tags>
-        <tag>my</tag>
-        <tag>1</tag>
-        <tag>2</tag>
-        <tag>3</tag>
+        <tag>hexo</tag>
+        <tag>next</tag>
+        <tag>美化</tag>
       </tags>
   </entry>
 </search>

@@ -1300,7 +1300,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #13a1ff;
+  background: #211b9a;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -2888,7 +2888,7 @@ body {
 副标题栏位字体美化,
 .site-subtitle {
   font-family: 'Lato', "PingFang SC", "华文新魏", sans-serif;
-  font-size: 10px;
+  font-size: 20px;
 }
 /*-------------------------------------------------------------------主页文章页面美化--------------------------------------------*/
 .post {

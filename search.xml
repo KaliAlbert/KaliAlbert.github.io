@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>1</title>
+    <url>/article/2212294583.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>hexo主题next7.8版本配置美化</title>
-    <url>/article/107153072/</url>
+    <url>/article/107153072.html</url>
     <content><![CDATA[<h1 id="设置博主文字描述和中文语言"><a href="#设置博主文字描述和中文语言" class="headerlink" title="设置博主文字描述和中文语言"></a>设置博主文字描述和中文语言</h1><h2 id="站点配置文件修改site"><a href="#站点配置文件修改site" class="headerlink" title="站点配置文件修改site"></a>站点配置文件修改site</h2><figure class="highlight avrasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">title:</span> Kali</span><br><span class="line"><span class="symbol">subtitle:</span> IT博客</span><br><span class="line"><span class="symbol">description:</span> 没有目的，就做不成任何事情</span><br><span class="line"><span class="symbol">keywords:</span></span><br><span class="line"><span class="symbol">author:</span> KaliAlbert</span><br><span class="line"><span class="symbol">language:</span> <span class="built_in">zh</span>-CN</span><br><span class="line"><span class="symbol">timezone:</span> Asia/Shanghai</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <hr>

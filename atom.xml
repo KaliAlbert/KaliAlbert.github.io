@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Kali的IT博客</title>
   
-  <subtitle>学习之路</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://kalialbert.github.io/"/>
-  <updated>2020-05-05T07:10:04.209Z</updated>
+  <updated>2020-05-05T15:21:10.115Z</updated>
   <id>https://kalialbert.github.io/</id>
   
   <author>
@@ -17,9 +17,24 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>1</title>
+    <link href="https://kalialbert.github.io/article/2212294583.html"/>
+    <id>https://kalialbert.github.io/article/2212294583.html</id>
+    <published>2020-05-05T15:16:49.000Z</published>
+    <updated>2020-05-05T15:21:10.115Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>hexo主题next7.8版本配置美化</title>
-    <link href="https://kalialbert.github.io/article/107153072/"/>
-    <id>https://kalialbert.github.io/article/107153072/</id>
+    <link href="https://kalialbert.github.io/article/107153072.html"/>
+    <id>https://kalialbert.github.io/article/107153072.html</id>
     <published>2020-05-03T09:29:01.000Z</published>
     <updated>2020-05-05T07:10:04.209Z</updated>
     

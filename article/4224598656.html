@@ -23,18 +23,21 @@
     var CONFIG = {"hostname":"kalialbert.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":true,"color":"#48D1CC","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="没有目的，就做不成任何事情">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Kali的IT博客">
-<meta property="og:url" content="https://kalialbert.github.io/archives/2020/05/index.html">
+  <meta name="description" content="摘要：    hive集群伪分布搭建所用架包为hive-2.3.2 搭建前准备master节点因为Centos7开始支持的数据库是Mariadb,所以需求先卸载Mariadb：rpm -qa | grep maria*卸载数据库：sudo yum -y remove mari*删除数据库文件：rm -rf &#x2F;var&#x2F;lib&#x2F;mysql&#x2F;* 添加 Yum 包:wget https:&#x2F;&#x2F;dev.mys">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建hive集群">
+<meta property="og:url" content="https://kalialbert.github.io/article/4224598656.html">
 <meta property="og:site_name" content="Kali的IT博客">
-<meta property="og:description" content="没有目的，就做不成任何事情">
+<meta property="og:description" content="摘要：    hive集群伪分布搭建所用架包为hive-2.3.2 搭建前准备master节点因为Centos7开始支持的数据库是Mariadb,所以需求先卸载Mariadb：rpm -qa | grep maria*卸载数据库：sudo yum -y remove mari*删除数据库文件：rm -rf &#x2F;var&#x2F;lib&#x2F;mysql&#x2F;* 添加 Yum 包:wget https:&#x2F;&#x2F;dev.mys">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-05-07T05:09:40.000Z">
+<meta property="article:modified_time" content="2020-05-07T06:56:54.562Z">
 <meta property="article:author" content="KaliAlbert">
-<meta property="article:tag" content="IT，分享，交流">
+<meta property="article:tag" content="伪分布">
+<meta property="article:tag" content="hive">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://kalialbert.github.io/archives/2020/05/">
+<link rel="canonical" href="https://kalialbert.github.io/article/4224598656.html">
 
 
 <script id="page-configurations">
@@ -42,12 +45,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Kali的IT博客</title>
+  <title>搭建hive集群 | Kali的IT博客</title>
   
 
 
@@ -199,136 +202,198 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://kalialbert.github.io/article/4224598656.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/assets/head.jpg">
+      <meta itemprop="name" content="KaliAlbert">
+      <meta itemprop="description" content="没有目的，就做不成任何事情">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Kali的IT博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          搭建hive集群
+        </h1>
+
+        <div class="post-meta">
+        
+            
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-05-07 13:09:40" itemprop="dateCreated datePublished" datetime="2020-05-07T13:09:40+08:00">2020-05-07</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B9%B3%E5%8F%B0%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">平台搭建</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
   
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 5 篇日志。 继续努力。</span>
-      </div>
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/article/4224598656.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/article/4224598656.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>2.1k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>2 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
+        <p>摘要：<br>    hive集群伪分布搭建所用架包为<code>hive-2.3.2</code></p>
+<h1 id="搭建前准备"><a href="#搭建前准备" class="headerlink" title="搭建前准备"></a>搭建前准备</h1><p>master节点<br>因为Centos7开始支持的数据库是Mariadb,所以需求先卸载Mariadb：<code>rpm -qa | grep maria*</code><br>卸载数据库：<code>sudo yum -y remove mari*</code><br>删除数据库文件：<code>rm -rf /var/lib/mysql/*</code></p>
+<p>添加 Yum 包:<code>wget https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm</code><br>或者        <code>wget http://repo.mysql.com/mysql80-community-release-el7-1.noarch.rpm</code></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">sudo</span> <span class="selector-tag">yum</span> <span class="selector-tag">update</span></span><br><span class="line"><span class="selector-tag">sudo</span> <span class="selector-tag">rpm</span> <span class="selector-tag">-ivh</span> <span class="selector-tag">mysql80-community-release-el7-1</span><span class="selector-class">.noarch</span><span class="selector-class">.rpm</span></span><br></pre></td></tr></table></figure>
+<p>安装：<code>sudo yum -y install mysql-community-server</code><br>启动守护进程：<code>sudo systemctl start mysqld</code><br>查看状态：<code>sudo systemctl status mysqld</code><br>查看版本：<code>mysql -V</code></p>
+<p>先创建一个用户<br><code>create user &#39;hive&#39;@&#39;%&#39; identified by &#39;hive&#39;;</code><br>再进行授权<br><code>grant all privileges on *.* to &#39;hive&#39;@&#39;%&#39; with grant option;</code><br>刷新权限<br><code>flush privileges;</code></p>
+<h1 id="hive安装及配置"><a href="#hive安装及配置" class="headerlink" title="hive安装及配置"></a>hive安装及配置</h1><p>master节点<br>解压：</p>
+<figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo tar -zxvf /opt/sorftware/apache-hive<span class="number">-2.3</span><span class="number">.2</span>-bin.tar.gz  -C /opt/modules/</span><br><span class="line">sudo mv ./apache-hive<span class="number">-2.3</span><span class="number">.2</span>-bin ./hive<span class="number">-2.3</span><span class="number">.2</span></span><br><span class="line">sudo chown -R joker /opt/modules/hive<span class="number">-2.3</span><span class="number">.2</span>/</span><br></pre></td></tr></table></figure>
+<p>mysql-connector驱动包上传到hive的lib目录下</p>
+<p>添加环境变量:<br><code>vi  /etc/profile</code></p>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="builtin-name">export</span> <span class="attribute">HIVE_HOME</span>=/opt/modules/hive-2.3.2</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">HIVE_CONF_DIR</span>=<span class="variable">$HIVE_HOME</span>/conf</span><br><span class="line"><span class="builtin-name">export</span> <span class="attribute">PATH</span>=<span class="variable">$PATH</span>:$HIVE_HOME/bin</span><br></pre></td></tr></table></figure>
+<p><code>source /etc/profile</code><br>测试：<code>hive --version</code></p>
+<p>对hive进行配置：</p>
+<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">cd</span> /<span class="keyword">opt</span>/modules/hive-<span class="number">2.3</span>.<span class="number">2</span>/<span class="keyword">conf</span>/</span><br></pre></td></tr></table></figure>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp  hive-<span class="keyword">default</span>.xml.<span class="keyword">template</span>   hive-site.xml</span><br></pre></td></tr></table></figure>
+<p>编辑hive-site.xml：<br>vi hive-site.xml</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">configuration</span>&gt;</span></span><br><span class="line"><span class="comment">&lt;!--mysql驱动--&gt;</span></span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">name</span>&gt;</span>javax.jdo.option.ConnectionDriverName<span class="tag">&lt;/<span class="name">name</span>&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">value</span>&gt;</span>com.mysql.cj.jdbc.Driver<span class="tag">&lt;/<span class="name">value</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;/<span class="name">property</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--url--&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span>&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">name</span>&gt;</span>javax.jdo.option.ConnectionURL<span class="tag">&lt;/<span class="name">name</span>&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">value</span>&gt;</span>jdbc:mysql://master1:3306/hive?createDatabaseIfNotExist=true<span class="symbol">&amp;amp;</span>useSSL=false<span class="tag">&lt;/<span class="name">value</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">property</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--mysql用户名--&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span>&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">name</span>&gt;</span>javax.jdo.option.ConnectionUserName<span class="tag">&lt;/<span class="name">name</span>&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">value</span>&gt;</span>root<span class="tag">&lt;/<span class="name">value</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;/<span class="name">property</span>&gt;</span> </span><br><span class="line"><span class="comment">&lt;!--mysql中hive用户密码--&gt;</span> </span><br><span class="line">	<span class="tag">&lt;<span class="name">property</span>&gt;</span> </span><br><span class="line">		<span class="tag">&lt;<span class="name">name</span>&gt;</span>javax.jdo.option.ConnectionPassword<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">value</span>&gt;</span>root123<span class="tag">&lt;/<span class="name">value</span>&gt;</span> </span><br><span class="line">	<span class="tag">&lt;/<span class="name">property</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">configuration</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-07T13:09:40+08:00"
-              content="2020-05-07">
-          05-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/article/4224598656.html" itemprop="url">
-            <span itemprop="name">搭建hive集群</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-07T13:05:11+08:00"
-              content="2020-05-07">
-          05-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/article/2778278144.html" itemprop="url">
-            <span itemprop="name">搭建hbase集群</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-07T12:46:08+08:00"
-              content="2020-05-07">
-          05-07
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/article/2993052877.html" itemprop="url">
-            <span itemprop="name">搭建zookeeper集群</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-06T18:07:56+08:00"
-              content="2020-05-06">
-          05-06
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/article/3182420119.html" itemprop="url">
-            <span itemprop="name">大数据平台伪分布式集群搭建</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-05-03T17:29:01+08:00"
-              content="2020-05-03">
-          05-03
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/article/107153072.html" itemprop="url">
-            <span itemprop="name">hexo主题next7.8版本配置美化</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+<p>bin目录下对数据库进行初始化并执行hive</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">schematool -dbType mysql -initSchema</span></span><br></pre></td></tr></table></figure>
+<p>必须先启动hadoop集群<br>hive</p>
+<p>启动Hive服务端并查看</p>
+<figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">bin/hive --service hiveserver2 <span class="meta">&amp;</span></span><br><span class="line">bin/hive --service metastore <span class="meta">&amp;</span></span><br><span class="line">jps</span><br></pre></td></tr></table></figure>
+<p>如果出现RunJar即成功</p>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+    <div>
+  	
+    	<div>
+    
+        <div style="text-align:center;color: #ccc;font-size:14px;">-------------本文结束<i class="fa fa-paw"></i>感谢您的阅读-------------</div>
+    
+</div>
+
+ 	
+    </div>
+      
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\article\3182420119.html" rel="bookmark">大数据平台伪分布式集群搭建</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\article\2778278144.html" rel="bookmark">搭建hbase集群</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="\article\2993052877.html" rel="bookmark">搭建zookeeper集群</a></div>
+    </li>
+  </ul>
+
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>KaliAlbert
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://kalialbert.github.io/article/4224598656.html" title="搭建hive集群">https://kalialbert.github.io/article/4224598656.html</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E4%BC%AA%E5%88%86%E5%B8%83/" rel="tag"><i class="fa fa-tag"></i> 伪分布</a>
+              <a href="/tags/hive/" rel="tag"><i class="fa fa-tag"></i> hive</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/article/2778278144.html" rel="prev" title="搭建hbase集群">
+      <i class="fa fa-chevron-left"></i> 搭建hbase集群
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
 
           </div>
           
+    <div class="comments" id="valine-comments"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -641,6 +706,7 @@ if(canvas.getContext){
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#搭建前准备"><span class="nav-number">1.</span> <span class="nav-text">搭建前准备</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#hive安装及配置"><span class="nav-number">2.</span> <span class="nav-text">hive安装及配置</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 

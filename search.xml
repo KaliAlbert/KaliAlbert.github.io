@@ -241,6 +241,7 @@
     <title>搭建hbase集群</title>
     <url>/article/2778278144.html</url>
     <content><![CDATA[<p>摘要：<br>    hbase集群伪分布搭建所用架包为<code>hbase-1.2.3</code></p>
+<a id="more"></a>
 <h1 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h1><p>master节点<br>解压：</p>
 <figure class="highlight armasm"><table><tr><td class="code"><pre><span class="line"><span class="symbol">sudo</span> tar -zxvf /<span class="meta">opt</span>/sorftware/hbase-<span class="number">1</span>.<span class="number">2</span>.<span class="number">3</span>-<span class="keyword">bin.tar.gz </span> -C /<span class="meta">opt</span>/modules/</span><br></pre></td></tr></table></figure>
 <figure class="highlight vim"><table><tr><td class="code"><pre><span class="line"><span class="keyword">vi</span> /etc/<span class="keyword">profile</span></span><br></pre></td></tr></table></figure>
@@ -275,6 +276,7 @@
     <title>搭建hive集群</title>
     <url>/article/4224598656.html</url>
     <content><![CDATA[<p>摘要：<br>    hive集群伪分布搭建所用架包为<code>hive-2.3.2</code></p>
+<a id="more"></a>
 <h1 id="搭建前准备"><a href="#搭建前准备" class="headerlink" title="搭建前准备"></a>搭建前准备</h1><p>master节点<br>因为Centos7开始支持的数据库是Mariadb,所以需求先卸载Mariadb：<code>rpm -qa | grep maria*</code><br>卸载数据库：<code>sudo yum -y remove mari*</code><br>删除数据库文件：<code>rm -rf /var/lib/mysql/*</code></p>
 <p>添加 Yum 包:<code>wget https://dev.mysql.com/get/mysql80-community-release-el7-1.noarch.rpm</code><br>或者        <code>wget http://repo.mysql.com/mysql80-community-release-el7-1.noarch.rpm</code></p>
 <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">sudo</span> <span class="selector-tag">yum</span> <span class="selector-tag">update</span></span><br><span class="line"><span class="selector-tag">sudo</span> <span class="selector-tag">rpm</span> <span class="selector-tag">-ivh</span> <span class="selector-tag">mysql80-community-release-el7-1</span><span class="selector-class">.noarch</span><span class="selector-class">.rpm</span></span><br></pre></td></tr></table></figure>
